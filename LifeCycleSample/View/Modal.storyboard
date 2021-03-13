@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6oc-bQ-74J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal View Controller-->
+        <scene sceneID="Ojf-hk-9Yk">
+            <objects>
+                <viewController id="6oc-bQ-74J" customClass="ModalViewController" customModule="LifeCycleSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KoC-I6-Yr8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1O-M3-yMz">
+                                <rect key="frame" x="0.0" y="428" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lyv-iF-1Rw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="遷移後の画面(モーダル)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-Uh-ExM">
+                                <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="94W-Q0-5Tq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rnU-kN-63W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g1O-M3-yMz" firstAttribute="centerY" secondItem="KoC-I6-Yr8" secondAttribute="centerY" id="98E-ev-Ngv"/>
+                            <constraint firstItem="aWH-Uh-ExM" firstAttribute="trailing" secondItem="rnU-kN-63W" secondAttribute="trailing" id="OY6-wF-Oz4"/>
+                            <constraint firstItem="g1O-M3-yMz" firstAttribute="centerX" secondItem="KoC-I6-Yr8" secondAttribute="centerX" id="W3G-uv-bPE"/>
+                            <constraint firstItem="rnU-kN-63W" firstAttribute="trailing" secondItem="g1O-M3-yMz" secondAttribute="trailing" id="XBD-dJ-9If"/>
+                            <constraint firstItem="aWH-Uh-ExM" firstAttribute="top" secondItem="rnU-kN-63W" secondAttribute="top" constant="40" id="evw-zy-Yhy"/>
+                            <constraint firstItem="g1O-M3-yMz" firstAttribute="leading" secondItem="rnU-kN-63W" secondAttribute="leading" id="sAb-qm-XfB"/>
+                            <constraint firstItem="aWH-Uh-ExM" firstAttribute="leading" secondItem="rnU-kN-63W" secondAttribute="leading" id="tkE-Gs-NjJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLifeCycleAtModal" destination="g1O-M3-yMz" id="Oh6-CE-FOj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCX-BG-wZS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
